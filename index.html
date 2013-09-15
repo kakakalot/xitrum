@@ -179,6 +179,7 @@ class EchoSockJsActor extends SockJsActor {
 
   override def postStop() {
     logger.info("onStop")
+    super.postStop()
   }
 }
             </code></pre>
