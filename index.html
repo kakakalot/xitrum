@@ -114,6 +114,7 @@ class HelloActor extends ActionActor {
 
   override def postStop() {
     logger.info("Actor stopped")
+    super.postStop()
   }
 }
             </code></pre>
@@ -154,6 +155,7 @@ class EchoWebSocketActor extends WebSocketActor {
 
   override def postStop() {
     logger.info("onStop")
+    super.postStop()
   }
 }
             </code></pre>
